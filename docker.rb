@@ -19,7 +19,7 @@ cheatsheet do
             name 'Run'
             notes <<-'END'
             ```bash
-            docker run -i mysql:5.6 --name mymysql -e MYSQL_ROOT_PASSWORD=password -p3306:3306
+            docker run --name mymysql -e MYSQL_ROOT_PASSWORD=password -p3306:3306 mysql:5.6
             ```
             END
         end

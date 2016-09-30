@@ -22,7 +22,7 @@ cheatsheet do
             name 'Shell in a container'
             notes <<-'END'
             ```bash
-            docker exec -i -t <container name> bash
+            docker exec -ti <container name> bash
             ```
             END
         end

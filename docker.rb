@@ -5,10 +5,24 @@ cheatsheet do
     category do
         id 'Basics'
         entry do
+            name 'Find images'
+            notes <<-'END'
+            <https://hub.docker.com/explore/>
+            END
+        end
+        entry do
             name 'Pull an image'
             notes <<-'END'
             ```bash
             docker pull mysql:5.6
+            ```
+            END
+        end
+        entry do
+            name 'Shell in a container'
+            notes <<-'END'
+            ```bash
+            docker exec -i -t <container name> bash
             ```
             END
         end

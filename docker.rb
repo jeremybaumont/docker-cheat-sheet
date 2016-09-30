@@ -28,6 +28,18 @@ cheatsheet do
         end
     end
     category do
+        id 'Config'
+        entry do
+            name 'Get the mounts fotr a container'
+            notes <<-'END'
+            ```bash
+            docker inspect <name> | jq '.[0].Mounts'
+            ```
+            END
+        end
+    end
+
+    category do
         id 'mysql'
         entry do
             name 'Run'
